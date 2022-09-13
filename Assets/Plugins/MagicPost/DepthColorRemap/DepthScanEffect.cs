@@ -8,10 +8,18 @@ public sealed class DepthScanEffect : PostProcessEffectSettings
 {
 
 
-    public ColorParameter color = new ColorParameter{ value = Color.Red };
+    public ColorParameter color = new ColorParameter{ value = Color.red };
     
     [Range(0f, 20f), Tooltip("size")]
     public FloatParameter size = new FloatParameter { value = 0.5f };
+
+
+    [Range(0f, 20f), Tooltip("speed")]
+    public FloatParameter speed = new FloatParameter { value = 0.5f };
+
+        [Range(0f, 20f), Tooltip("split")]
+    public FloatParameter split = new FloatParameter { value = 0.5f };
+
 
 
     
@@ -55,11 +63,13 @@ public sealed class DepthScanEffectRenderer : PostProcessEffectRenderer<DepthSca
 
         sheet.properties.SetFloat("_Blend", settings.blend);
         sheet.properties.SetFloat("_Size", settings.size);
+        sheet.properties.SetFloat("_Split", settings.split);
         sheet.properties.SetFloat("_Amount", settings.amount);
         sheet.properties.SetFloat("_BandSize", settings.bandSize);
         sheet.properties.SetFloat("_ScanFade", settings.scanFade);
         sheet.properties.SetFloat("_CameraNear",context.camera.nearClipPlane );
         sheet.properties.SetFloat("_CameraFar",context.camera.farClipPlane );
+        sheet.properties.SetFloat("_Speed",settings.speed);
 
         context.command.BlitFullscreenTriangle(context.source, context.destination, sheet, 0);
     }
