@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: Main Camera Profile
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: 5595151578365033652}
+--- !u!114 &2628399569251505798
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108638d0a9a84a445af1cee3bb7ef44e, type: 3}
+  m_Name: GlitchEffect
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  size:
+    overrideState: 1
+    value: 3.76
+  amount:
+    overrideState: 1
+    value: 0.5
+  speed:
+    overrideState: 1
+    value: 34
+  blend:
+    overrideState: 1
+    value: 0.5
+  split:
+    overrideState: 1
+    value: 38
+--- !u!114 &5595151578365033652
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab3f79511242e7439133f63b89575f0, type: 3}
+  m_Name: GlitchEffect
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  size:
+    overrideState: 1
+    value: 0.51
+  amount:
+    overrideState: 1
+    value: 0.0497
+  speed:
+    overrideState: 1
+    value: 47.9
+  blend:
+    overrideState: 1
+    value: 1
+  split:
+    overrideState: 1
+    value: 0
